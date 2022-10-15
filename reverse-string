@@ -1,0 +1,20 @@
+function reverse(str) {
+ let arr =  str.split('')
+  arr.reverse();
+
+ return arr.join('')
+
+}
+console.log(reverse(`hello`));
+
+
+
+  public static void main(String[] args) {
+
+          String str = "hello";
+          var sb= new StringBuilder(str);
+          sb.reverse();
+
+        System.out.println(sb.toString());
+
+    }
