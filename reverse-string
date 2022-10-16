@@ -18,3 +18,25 @@ console.log(reverse(`hello`));
         System.out.println(sb.toString());
 
     }
+    
+    
+    public static void main(String[] args) {
+
+        String str = "hello";
+
+        BinaryOperator<String> function = (acc, ele) ->  ele +acc;
+
+        var result = Arrays.stream(str.split("")).reduce("", function);
+
+        System.out.println(result);
+    }
+    
+    
+function reverse(str) {
+  const callFun = (acc, ele) => ele + acc;
+
+  return str.split('').reduce(callFun, '')
+
+}
+
+console.log(reverse(`hello`));
